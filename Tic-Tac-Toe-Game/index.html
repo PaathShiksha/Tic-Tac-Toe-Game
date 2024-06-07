@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <section>
+        <h1 class="game--title">Tic-Tac-Toe</h1>
+        <div class="game--container">
+            <div data-cell-index="0" class="cell"></div>
+            <div data-cell-index="1" class="cell"></div>
+            <div data-cell-index="2" class="cell"></div>
+            <div data-cell-index="3" class="cell"></div>
+            <div data-cell-index="4" class="cell"></div>
+            <div data-cell-index="5" class="cell"></div>
+            <div data-cell-index="6" class="cell"></div>
+            <div data-cell-index="7" class="cell"></div>
+            <div data-cell-index="8" class="cell"></div>
+        </div>
+        <h2 class="game--status"></h2>
+        <button class="game--restart">Play Game</button>
+        <div class="scoreboard">
+            <p>Player 1 (X) Wins: <span id="player1Wins">0</span></p>
+            <p>Player 2 (O) Wins: <span id="player2Wins">0</span></p>
+        </div>
+
+        <!-- Sound effects -->
+        <audio id="clickSound" src="src/audio/click.wav"></audio>
+        <audio id="winSound" src="src/audio/win.mp3"></audio>
+        <audio id="drawSound" src="src/audio/draw.wav"></audio>
+
+    </section>
+
+    <script src="src/script.js"></script>
+</body>
+</html>
